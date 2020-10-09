@@ -1,0 +1,14 @@
+type Query {
+   studentById(id:ID!):Student
+}
+
+type Student {
+   id:ID!
+   firstName:String
+   lastName:String
+   collegeId:String
+}
+
+type Mutation {
+   createStudent(collegeId:ID,firstName:String,lastName:String):String
+}
